@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-12T15:48:21.881186" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Calculadora" source="C:\Users\lucas\OneDrive\Documents\git\Desafio_Leme\tests\test_calculadora.robot">
+<test id="s1-t1" name="Cenario 2: Soma Numero Negativo" line="13">
+<kw name="Dado que estou com página calculator aberta" owner="resource_calculadora">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-12T15:48:22.048003" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/calculate.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-12T15:48:22.047823" elapsed="2.830466"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-12T15:48:24.878509" elapsed="0.023819"/>
+</kw>
+<status status="PASS" start="2025-05-12T15:48:22.047324" elapsed="2.855108"/>
+</kw>
+<kw name="Qaundo digitar &quot;-2&quot; no primeiro campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T15:48:24.903249" level="INFO">Typing text '-2' into text field 'id:number1'.</msg>
+<arg>${CAMPO1}</arg>
+<arg>-2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T15:48:24.902960" elapsed="0.061121"/>
+</kw>
+<status status="PASS" start="2025-05-12T15:48:24.902707" elapsed="0.061492"/>
+</kw>
+<kw name="E digitar &quot;7&quot; no segundo campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T15:48:24.964840" level="INFO">Typing text '7' into text field 'id:number2'.</msg>
+<arg>${CAMPO2}</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T15:48:24.964662" elapsed="0.043342"/>
+</kw>
+<status status="PASS" start="2025-05-12T15:48:24.964448" elapsed="0.043635"/>
+</kw>
+<kw name="E clicar no botão Calculate" owner="resource_calculadora">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-12T15:48:25.008634" level="INFO">Clicking button 'id:calculate'.</msg>
+<arg>${BOTAO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T15:48:25.008481" elapsed="0.301933"/>
+</kw>
+<status status="PASS" start="2025-05-12T15:48:25.008283" elapsed="0.302231"/>
+</kw>
+<kw name="Então deve mostrar o resultado &quot;5&quot;" owner="resource_calculadora">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-12T15:48:25.311164" level="INFO">Verifying element 'id:answer' contains exact text '5'.</msg>
+<arg>${RESPOSTA}</arg>
+<arg>5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-12T15:48:25.310992" elapsed="0.600562"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-12T15:48:27.911947" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-12T15:48:25.911712" elapsed="2.000355"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-12T15:48:27.912228" elapsed="2.122033"/>
+</kw>
+<status status="PASS" start="2025-05-12T15:48:25.310768" elapsed="4.723620"/>
+</kw>
+<tag>SomaNegativa</tag>
+<status status="PASS" start="2025-05-12T15:48:22.046722" elapsed="7.987889"/>
+</test>
+<status status="PASS" start="2025-05-12T15:48:21.882400" elapsed="8.152697"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SomaNegativa</stat>
+</tag>
+<suite>
+<stat name="Test Calculadora" id="s1" pass="1" fail="0" skip="0">Test Calculadora</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
