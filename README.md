@@ -32,3 +32,9 @@ Se quiser rodar todos os testes, independente da tag, use:
 Executando cenários específicos por tag, use:
 `robot -d ./Logs -i SomaNegativa ./tests/test_calculadora.robot`
 `robot -d ./Logs -i SomaSimples -i SomaDecimal ./tests/test_calculadora.robot`
+
+
+
+
+https://github.com/user-attachments/assets/02937bb5-5760-49ef-a2cd-2f3adb8882c9
+
