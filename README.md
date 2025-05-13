@@ -10,7 +10,8 @@ Este projeto é um exemplo simples de automação de testes utilizando o [Robot 
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [Google Chrome](https://www.google.com/chrome/)
 - [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/) compatível com sua versão do Chrome. Colar o arquivo e executar o chromedriver no diretório AppData\Local\Programs\Python\Python310\Scripts
-![alt text](image-2.png)
+![alt text](imagens/image-2.png)
+![alt text](imagens/image-1.png)
 
 2. **Instale as dependências:**
 - `pip install robotframework` no CMD
@@ -32,3 +33,5 @@ Se quiser rodar todos os testes, independente da tag, use:
 Executando cenários específicos por tag, use:
 `robot -d ./Logs -i SomaNegativa ./tests/test_calculadora.robot`
 `robot -d ./Logs -i SomaSimples -i SomaDecimal ./tests/test_calculadora.robot`
+
+
