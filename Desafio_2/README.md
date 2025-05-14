@@ -34,11 +34,5 @@ Executando cenários específicos por tag, use:
 `robot -d ./Logs -i SomaNegativa ./tests/test_calculadora.robot`
 `robot -d ./Logs -i SomaSimples -i SomaDecimal ./tests/test_calculadora.robot`
 
-
-<<<<<<< HEAD
-=======
-
-
 https://github.com/user-attachments/assets/02937bb5-5760-49ef-a2cd-2f3adb8882c9
 
->>>>>>> bb8c0696b581eb30712f83660d43447aef749f9c
