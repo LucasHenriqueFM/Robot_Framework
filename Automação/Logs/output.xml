@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-30T11:39:37.122661" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Calculadora" source="C:\Users\lucas\OneDrive\Documents\git\Desafio_Leme\Desafio_2\tests\test_calculadora.robot">
+<test id="s1-t1" name="Cenario 1: Soma Simples" line="5">
+<kw name="Dado que estou com página calculator aberta" owner="resource_calculadora">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:37.446435" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/calculate.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-30T11:39:37.445970" elapsed="3.533227"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-30T11:39:40.980673" elapsed="0.023242"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:37.445219" elapsed="3.558802"/>
+</kw>
+<kw name="Qaundo digitar &quot;2&quot; no primeiro campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:41.004786" level="INFO">Typing text '2' into text field 'id:number1'.</msg>
+<arg>${CAMPO1}</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:41.004507" elapsed="0.057681"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:41.004279" elapsed="0.058002"/>
+</kw>
+<kw name="E digitar &quot;2&quot; no segundo campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:41.062870" level="INFO">Typing text '2' into text field 'id:number2'.</msg>
+<arg>${CAMPO2}</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:41.062708" elapsed="0.042529"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:41.062508" elapsed="0.042807"/>
+</kw>
+<kw name="E clicar no botão Calculate" owner="resource_calculadora">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:41.105821" level="INFO">Clicking button 'id:calculate'.</msg>
+<arg>${BOTAO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:41.105680" elapsed="0.266832"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:41.105497" elapsed="0.267131"/>
+</kw>
+<kw name="Então deve mostrar o resultado &quot;4&quot;" owner="resource_calculadora">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:41.373269" level="INFO">Verifying element 'id:answer' contains exact text '4'.</msg>
+<arg>${RESPOSTA}</arg>
+<arg>4</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-30T11:39:41.373104" elapsed="0.433568"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T11:39:43.807795" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T11:39:41.806838" elapsed="2.001069"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-30T11:39:43.808072" elapsed="2.114169"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:41.372891" elapsed="4.549480"/>
+</kw>
+<tag>SomaSimples</tag>
+<status status="PASS" start="2025-05-30T11:39:37.444551" elapsed="8.478063"/>
+</test>
+<test id="s1-t2" name="Cenario 2: Soma Numero Negativo" line="13">
+<kw name="Dado que estou com página calculator aberta" owner="resource_calculadora">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:45.923729" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/calculate.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-30T11:39:45.923558" elapsed="2.583924"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-30T11:39:48.507653" elapsed="0.023241"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:45.923351" elapsed="2.607641"/>
+</kw>
+<kw name="Qaundo digitar &quot;-2&quot; no primeiro campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:48.531723" level="INFO">Typing text '-2' into text field 'id:number1'.</msg>
+<arg>${CAMPO1}</arg>
+<arg>-2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:48.531517" elapsed="0.060596"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:48.531263" elapsed="0.060974"/>
+</kw>
+<kw name="E digitar &quot;7&quot; no segundo campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:48.593035" level="INFO">Typing text '7' into text field 'id:number2'.</msg>
+<arg>${CAMPO2}</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:48.592814" elapsed="0.043083"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:48.592518" elapsed="0.043488"/>
+</kw>
+<kw name="E clicar no botão Calculate" owner="resource_calculadora">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:48.636620" level="INFO">Clicking button 'id:calculate'.</msg>
+<arg>${BOTAO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:48.636462" elapsed="0.285977"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:48.636228" elapsed="0.286360"/>
+</kw>
+<kw name="Então deve mostrar o resultado &quot;5&quot;" owner="resource_calculadora">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:48.923299" level="INFO">Verifying element 'id:answer' contains exact text '5'.</msg>
+<arg>${RESPOSTA}</arg>
+<arg>5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-30T11:39:48.923116" elapsed="0.218685"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T11:39:51.142635" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T11:39:49.141968" elapsed="2.000782"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-30T11:39:51.142912" elapsed="2.098825"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:48.922877" elapsed="4.318982"/>
+</kw>
+<tag>SomaNegativa</tag>
+<status status="PASS" start="2025-05-30T11:39:45.922975" elapsed="7.319165"/>
+</test>
+<test id="s1-t3" name="Cenario 3: Soma Numero Com Virgula" line="22">
+<kw name="Dado que estou com página calculator aberta" owner="resource_calculadora">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:53.243471" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/calculate.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-30T11:39:53.243241" elapsed="2.765531"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.008954" elapsed="0.018251"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:53.242964" elapsed="2.784327"/>
+</kw>
+<kw name="Qaundo digitar &quot;2.5&quot; no primeiro campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:56.027923" level="INFO">Typing text '3.5' into text field 'id:number1'.</msg>
+<arg>${CAMPO1}</arg>
+<arg>3.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.027764" elapsed="0.059809"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:56.027546" elapsed="0.060143"/>
+</kw>
+<kw name="E digitar &quot;2.5&quot; no segundo campo" owner="resource_calculadora">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:56.088489" level="INFO">Typing text '3.5' into text field 'id:number2'.</msg>
+<arg>${CAMPO2}</arg>
+<arg>3.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.088289" elapsed="0.043418"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:56.088004" elapsed="0.043816"/>
+</kw>
+<kw name="E clicar no botão Calculate" owner="resource_calculadora">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:56.132546" level="INFO">Clicking button 'id:calculate'.</msg>
+<arg>${BOTAO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.132345" elapsed="0.257651"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:56.132070" elapsed="0.258016"/>
+</kw>
+<kw name="Então deve mostrar o resultado &quot;7&quot;" owner="resource_calculadora">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-30T11:39:56.390805" level="INFO">Verifying element 'id:answer' contains exact text '7'.</msg>
+<arg>${RESPOSTA}</arg>
+<arg>7</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.390618" elapsed="0.429547"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T11:39:58.820722" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T11:39:56.820490" elapsed="2.000347"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-30T11:39:58.821001" elapsed="2.122111"/>
+</kw>
+<status status="PASS" start="2025-05-30T11:39:56.390376" elapsed="4.552874"/>
+</kw>
+<tag>SomaDecimal</tag>
+<status status="PASS" start="2025-05-30T11:39:53.242538" elapsed="7.700939"/>
+</test>
+<status status="PASS" start="2025-05-30T11:39:37.123874" elapsed="23.820044"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SomaDecimal</stat>
+<stat pass="1" fail="0" skip="0">SomaNegativa</stat>
+<stat pass="1" fail="0" skip="0">SomaSimples</stat>
+</tag>
+<suite>
+<stat name="Test Calculadora" id="s1" pass="3" fail="0" skip="0">Test Calculadora</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
